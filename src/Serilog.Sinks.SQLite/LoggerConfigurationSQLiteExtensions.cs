@@ -58,7 +58,7 @@ namespace Serilog
             TimeSpan? retentionCheckInterval = null,
             LoggingLevelSwitch levelSwitch = null,
             uint batchSize = 100,
-            uint maxDatabaseSize = 10,
+            uint maxDatabaseSize = 1000, // 1GB
             bool rollOver = true)
         {
             if (loggerConfiguration == null) {
